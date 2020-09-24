@@ -16,14 +16,6 @@ int main()
  
     cout << "Hello world!" << endl;
 
-    Person<int>* person = new Person<int>();
-    person->write(5, 5);
-    cout << person->size() << endl;
-    cout << "Hello world! 2" << endl;
-
-    person->insertToHeap(0);
-
-
     string numberInput;
     getline(cin, numberInput);
     stringstream stream(numberInput);
@@ -33,16 +25,11 @@ int main()
     while (stream >> temp) {
         ints.push_back(temp);
     }
-    int m = 0;
     
-   // PriorityQueue<int>* pq = new PriorityQueue<int>(0);
+    PriorityQueue<int> * pq = new PriorityQueue<int>(0);
 
-
-
-
-    int i = 1;
    // for (int i : ints) {
-      // pq.insertToHeap(i);
+       pq.insertToHeap(1);
  //   }
     //pq.print();
     
